@@ -9,6 +9,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import DropDown from "../../components/DrawerComponent/About/DropDown";
 import AdministrationDropDown from "../../components/DrawerComponent/Administraion/AdministrationDropDown";
 import AcadmicDropdown from "../../components/DrawerComponent/Academic/AcademicDropdown";
+import DepartmentDropdown from "../../components/DrawerComponent/Departments/DepartmentDropdown";
 const DrawerComponent = ({ drawerOpen, toggleDrawer, navigate }) => {
   const drawerItems = [
     "HOME",
@@ -24,7 +25,7 @@ const DrawerComponent = ({ drawerOpen, toggleDrawer, navigate }) => {
   const [showAboutDropdown, setShowAboutDropdown] = useState(false);
   const [showAdminDropdown, setShowAdminDropdown] = useState(false);
   const [showAcadmicDropdown, setAcadmicDropdown] = useState(false);
-
+const [showDepartmentDropdown,setDepartmentDropdown]=useState(false)
   // Function to toggle the ABOUT dropdown
   const toggleAboutDropdown = () => {
     setShowAboutDropdown(!showAboutDropdown);
@@ -38,7 +39,10 @@ const DrawerComponent = ({ drawerOpen, toggleDrawer, navigate }) => {
   const toggleAcademicDropdown = () => {
     setAcadmicDropdown(!showAcadmicDropdown);
   };
-
+//function to toggle the department
+const toggleDepartmentDropdown = () => {
+  setDepartmentDropdown(!showDepartmentDropdown);
+};
   return (
     <Box>
       <Drawer
@@ -104,17 +108,17 @@ const DrawerComponent = ({ drawerOpen, toggleDrawer, navigate }) => {
               </div>
               ) : item === "DEPARTMENTS" ? (
               <div key={index}>
-                <ListItem onClick={toggleAcademicDropdown}>
+                <ListItem onClick={toggleDepartmentDropdown}>
                   <ListItemText primary={item} />
                   <IconButton
-                    onClick={toggleAcademicDropdown}
+                    onClick={toggleDepartmentDropdown}
                     size="small"
                     sx={{ marginLeft: "auto" }}
                   >
                     <KeyboardArrowDownIcon />
                   </IconButton>
                 </ListItem>
-                {showAcadmicDropdown && <AcadmicDropdown />}
+                {showDepartmentDropdown && <DepartmentDropdown />}
               
               </div>
             ) : (

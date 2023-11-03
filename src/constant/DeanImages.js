@@ -1,4 +1,4 @@
-  const DeanImages=[
+ export const DeanImages1=[
     {
     
      img:'./assets/Dean1.jpg',
@@ -45,7 +45,7 @@
         
 },
 ]
-const Hod=[
+export const HodImages=[
   {
   img:'./assets/hod1.jpg',
   name:'Hemant Chauhan',
@@ -95,4 +95,115 @@ const Hod=[
 
 },
 ]
-export default DeanImages
+
+export const facultyImage=[
+  {
+    img:'./assets/facultyIncharge1.jpg',
+    name:'Sndeep Kandwal',
+    incharge1:'Registrar',
+    incharge2:'Estate Officer',
+    incharge3:'Office Incharge Purchase Store'
+
+},
+  {
+    img:'./assets/facultyIncharge2.jpg',
+    name:'Abhishek Chauhan',
+    incharge1:'Officer Incharge AICTE Approval process',
+    incharge2:'Officer Incharge Horticulture and Sanitization',
+    
+
+},
+  {
+    img:'./assets/facultyIncharge3.jpg',
+    name:'Arun Negi',
+    incharge1:'NBA Coordinator',
+   
+
+},
+  {
+    img:'./assets/facultyIncharge4.jpg',
+    name:'Jagnandan Negi',
+    incharge1:'Faculty Coordinator',
+    incharge2:'Officer Incharge Electrical Maintenance',
+    incharge3:'Officer Community Services'
+
+},
+  {
+    img:'./assets/facultyIncharge5.jpg',
+    name:'Abhishek Aggrawal',
+    incharge1:'MERITE Project Coordinator',
+    incharge2:'Officer Incharge Internship & Training',
+  
+
+},
+  {
+    img:'./assets/facultyIncharge6.jpg',
+    name:'Arun Uniyal',
+    incharge1:'Assistant Registrar',
+    incharge2:'Staff Coordinator',
+
+
+},
+  {
+    img:'./assets/facultyIncharge7.jpg',
+    name:'Ombeer Saini',
+    incharge1:'Controller of Examination',
+   
+
+},
+  {
+    img:'./assets/facultyIncharge8.jpg',
+    name:'Hemant Chauhan',
+    incharge1:'Officer Incharge Examination',
+   
+
+},
+  {
+    img:'./assets/facultyIncharge9.jpg',
+    name:'Dinesh Kumar',
+    incharge1:'Officer Incharge Training and Placement',
+  
+
+},
+  {
+    img:'./assets/facultyIncharge10.jpg',
+    name:'Neelam',
+    incharge1:'Training & Placement Officer',
+   
+
+},
+  {
+    img:'./assets/facultyIncharge11.jpg',
+    name:'Shaeba Khanum',
+    incharge1:'Officer Incharge Central Library',
+   
+
+},
+  {
+    img:'./assets/facultyIncharge12.jpg',
+    name:'Monika Bartwal',
+    incharge1:'Officer Incharge Internet Services',
+ 
+
+},
+  {
+    img:'./assets/facultyIncharge13.jpg',
+    name:'Yashvi Chandola',
+    incharge1:'Officer Incharge Institute Website',
+ 
+},
+  {
+    img:'./assets/facultyIncharge14.jpg',
+    name:'Suraj Singh Chand',
+    incharge1:'Officer Incharge Sports & Gymnasium',
+    
+
+},
+  {
+    img:'./assets/facultyIncharge15.jpg',
+    name:'Pradeep Chandra',
+    incharge1:'Officer Incharge Cafeteria & Canteen',
+   
+
+},
+]

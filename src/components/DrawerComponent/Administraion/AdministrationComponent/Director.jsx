@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Paper, Typography } from "@mui/material";
+import { Box, Card, Paper, Typography } from "@mui/material";
 import { Mainbox } from "../Style";
 
 
@@ -8,14 +8,15 @@ import { Mainbox } from "../Style";
     <>
       <Mainbox>
       
+      <Card>
         <img src="https://itgopeshwar.ac.in/wp-content/uploads/2022/11/director-sir-1.jpg" 
         />
         <h1>Dr. Sanjeev Naithani</h1>
         <h4>DIRECTOR OF INSTIUTE OF TECHNOLOGY, GOPESHWAR</h4>
       
-        
+        </Card>
      
-      <Box>
+     
         <Typography>
           <b>
             Dr. Sanjeev Naithani is the current Director of the Institute of
@@ -24,7 +25,8 @@ import { Mainbox } from "../Style";
             Communication Engineering at G. B. Pant Institute of Engineering and
             Technology Pauri, since 2001.
           </b>
-          <br/>
+          </Typography>
+          <Typography>
           Dr.Sanjeev Naithani obtained his Bachelor of Engineering degree in
           Electronics & Communication Engineering from the G. B. Pant Institute
           of Engineering and Technology,Pauri. He has obtained a Master of
@@ -33,7 +35,7 @@ import { Mainbox } from "../Style";
           Germany. Further, he was awarded a PhD degree from the University
           Gent, Belgium.
           </Typography>
-          <br/>
+          
           <Typography>
            He has worked in different administrative capacities
           such as Dean Academics, Proctor, Registrar, Chief Warden, Security
@@ -60,7 +62,7 @@ import { Mainbox } from "../Style";
           Faculty Award and Merit Scholarships during Bachelor degree in
           Engineering.
           </Typography>
-      </Box>
+     
       </Mainbox>
     </>
   );

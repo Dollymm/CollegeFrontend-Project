@@ -8,7 +8,7 @@ const Muu = () => {
             <Table>
                 <TableHead>
                 <TableRow
-                 sx={{fontWeight:700}}>
+                 sx={{fontWeight:'bold'}}>
                     <TableCell>S.NO</TableCell>
                     <TableCell>Industry Name</TableCell>
                     <TableCell>Date</TableCell>

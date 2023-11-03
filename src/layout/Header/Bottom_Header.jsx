@@ -6,7 +6,7 @@ import { Box, Toolbar, Typography } from '@mui/material';
 
 const Bottom_Header = () => {
     return (
-        <Bottom position='static'>
+        <Bottom position='sticky'>
             <Toolbar>
                 <Text>
                     <Typography>Announcements</Typography>

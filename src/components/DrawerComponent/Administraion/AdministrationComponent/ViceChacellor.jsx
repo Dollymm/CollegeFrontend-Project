@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Card, Typography } from "@mui/material";
 import React from "react";
 import { Mainbox } from "../Style";
 
@@ -6,11 +6,12 @@ import { Mainbox } from "../Style";
   return (
     <>
       <Mainbox>
+      <Card>
         <img src="https://itgopeshwar.ac.in/wp-content/uploads/2022/08/vc.jpeg" />
         <h1>Prof.Onkar Singh</h1>
         <h4>Vice Chancellor UTU Deradun</h4>
-      
-     
+        </Card>
+         
       <Typography>
         Dr. Onkar Singhis a Professor of Mechanical Engineering at Harcourt
         Butler Technical University (Formerly HBTI), Kanpur since January 2007.

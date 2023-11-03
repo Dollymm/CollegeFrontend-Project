@@ -108,7 +108,7 @@ export const SubItem=[
         {
         id:"2",
         title:"Apply Online",
-        path:"applyOline",
+        path:"applyOnline",
         cName:"submenu-item3"
     },
         {

@@ -34,7 +34,7 @@ const MIddle_Header = () => {
     setDrawerOpen(!drawerOpen);
   };
   return (
-    <Container position="static">
+    <Container position="sticky">
       <Toolbar sx={{ height: "100%" }}>
         {/* for clg logo */}
         <Icon>

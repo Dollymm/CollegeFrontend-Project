@@ -26,7 +26,19 @@ import Muu from "./components/DrawerComponent/Administraion/AdministrationCompon
 import AnualReport  from "./components/DrawerComponent/Administraion/AdministrationComponent/AnualReport"
 import Aicte from "./components/DrawerComponent/Administraion/AdministrationComponent/Aicte"
 import DirectorMessage from "./components/DrawerComponent/About/AboutComponent/DirectorMessage";
-
+import Programmes from "./components/DrawerComponent/Academic/AcademicComponent/Programmes";
+import ApplyOnline from "./components/DrawerComponent/Academic/AcademicComponent/ApplyOnline";
+import Ordiance from "./components/DrawerComponent/Academic/AcademicComponent/Ordiance";
+import FeesExpences from "./components/DrawerComponent/Academic/AcademicComponent/FeesExpences";
+import AcademicClender from "./components/DrawerComponent/Academic/AcademicComponent/AcademicClender";
+import Syllbus from "./components/DrawerComponent/Academic/AcademicComponent/Syllbus";
+import TimeTable from "./components/DrawerComponent/Academic/AcademicComponent/TimeTable";
+import CivilEng from "./components/DrawerComponent/Departments/DepartmentComp/CivilEng";
+import Cse from "./components/DrawerComponent/Departments/DepartmentComp/Cse"
+import Ece from "./components/DrawerComponent/Departments/DepartmentComp/Ece"
+import Electrical from "./components/DrawerComponent/Departments/DepartmentComp/Electrical"
+import Humanities from "./components//DrawerComponent/Departments/DepartmentComp/Humanities"
+import Mechanical from "./components/DrawerComponent/Departments/DepartmentComp/Mechanical"
 const App = () => {
   return (
     <>
@@ -52,7 +64,20 @@ const App = () => {
         <Route path="/anual" element={<AnualReport/>}/>
         <Route path="/aicte" element={<Aicte/>}/>
         <Route path="/academic" element={<Academic/>}/>
+        <Route path="/programs" element={<Programmes/>}/>
+       <Route path="/applyOnline" element={<ApplyOnline/>}/>
+       <Route path="/ordinance" element={<Ordiance/>}/>
+       <Route path="/Fees" element={<FeesExpences/>}/>
+       <Route path="/calender" element={<AcademicClender/>}/>
+       <Route path="/syllabus" element={<Syllbus/>}/> 
+       <Route path="/timetable" element={<TimeTable/>}/> 
         <Route path="/department" element={<Departments/>}/>
+        <Route path="/civil" element={<CivilEng/>}/>
+        <Route path="/cse" element={<Cse/>}/>
+        <Route path="/ece" element={<Ece/>}/>
+        <Route path="/electrical" element={<Electrical/>}/>
+        <Route path="/humanities" element={<Humanities/>}/>
+        <Route path="/mechanical" element={<Mechanical/>}/>
         <Route path="/facilities" element={<Faclities/>}/>
         <Route path="/student" element={<StudentCorner/>}/>
 

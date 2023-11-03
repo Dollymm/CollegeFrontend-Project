@@ -1,75 +1,63 @@
-import { Box, styled } from "@mui/material";
+import { Box, Card,styled } from "@mui/material";
 
 export const Mainbox=styled(Box)(({theme})=>({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
   textAlign:'center',
+  boxSizing:'border-box',
+  padding: theme.spacing(0, 10),
+  overflowX: "hidden",
   flexDirection: "column", 
   width: "100%",
   marginTop: 20,
   textAlign: "center",
   overflow: "hidden",
   color: "#0D2E71",
-  background:"linear-gradient(to right ,#F7DFAF,#DEE7F1)",
-  boxSizing:'border-box',
-  marginRight:'auto',
-  marginLeft:'auto',
-
-  paddingLeft:'60px',
-paddingRight:'60px',
-  
   // padding: "20px",
-  // "&>h1":{
-
-  //   background:'#0D2E71',
-  //   color:'white'
-  // },
+  "&>div":{
+width:'100%',
+background:"linear-gradient(to right ,#F7DFAF,#DEE7F1)",
+ 
+  "&>h1":{
+    // background:'#0D2E71',
+    color:'#0D2E71'
+  },
   "& > h1, & > img, & > p": {
     marginBottom: "20px", 
   },
   "& > img": {
     display: "block",
-    width: "333px",
-    maxWidth: "60%",
-    borderRadius: "50%",
+    // alignItems:'center',
+    width: "743",
+    maxWidth: "50%",
+    borderRadius: "70px",
     height: "auto",
     padding: 30,
     margin: "0 auto", 
     fontSize: 20,
     color: "#0D2E71",
     [theme.breakpoints.down("sm")]: {
-      width: "90%", 
-      borderRadius:'30px'
+      width: "100%", 
     },
   },
+},
   "& > p": {
     display: "flex",
-    textAlign: "center",
+    textAlign: "justify",
     overflow: "hidden",
     width: "100%",
     maxWidth:'100%',
-    fontSize: '12.0pt',
-    lineHeight: '115%',
-    marginRight:'auto',
     [theme.breakpoints.down("sm")]: {
       display: "block", // Change to block display
-      
-    },
-  },
-
+      padding: "10px",
+    }},
+    [theme.breakpoints.down("sm")]:{
+      padding: theme.spacing(0, 3),
+    }
   
 }))
-  export const Childbox=styled(Box)(({theme})=>({
-    display: "grid",
-    justifyContent: "center",
-    alignItems: "center",
-    width: "100%",
-    marginTop: 20,
-    textAlign: "center",
-    overflow: "hidden",
-    color: "black",
-  }))
+
 
   export const Container = styled(Box)(({ theme }) => ({
     display: "grid",
@@ -86,12 +74,16 @@ paddingRight:'60px',
       flexDirection: "column",
       '& > img':{
           width:120,
-          
+          borderRadius:'5px'
       },
       "& > p": {
         color: "#0d1057",
         width: 187,
+        boxSizing:'border-box',
         display: "flex",
+        paddingLeft:'31px',
+        alignItems:'center',
+        justifyContent:'center',
         textAlign: "center",
         fontWeight:600,
         height:80,
@@ -114,3 +106,19 @@ paddingRight:'60px',
       },
     },
   }));
+
+  export const WorkingCard=styled(Card)(({theme})=>({
+    marginTop:30,
+    boxSizing:'border-box',
+
+  padding: theme.spacing(0, 10),
+  color:'black',
+    "&> div":{
+      color:'black',
+      borderBottom: '1px solid #d4d4d4',
+
+    },
+    [theme.breakpoints.down("sm")]:{
+      padding: theme.spacing(0, 3),
+    }
+  }))

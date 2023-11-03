@@ -5,7 +5,7 @@ import { Typography,Button } from '@mui/material'
 
 const AboutButton = () => {
 
-    const [showMission, setShowMission] = useState(false);
+    const [showMission, setShowMission] = useState(true);
     const [showVision, setShowVision] = useState(false);
   
     const missionText = (
@@ -29,23 +29,23 @@ const AboutButton = () => {
     );
   
     const handleMissionClick = () => {
-      setShowMission(!showMission);
-      setShowVision(false); // Hide the vision text
+      setShowMission(true);
+    setShowVision(false); // Hide the vision text
     };
   
     const handleVisionClick = () => {
-      setShowVision(!showVision);
+      setShowVision(true);
       setShowMission(false); // Hide the mission text
     };
   
     return (
-      <div>
-        <Button variant="outlined" onClick={handleMissionClick}>
-          Mission
-        </Button>
-        <Button variant="outlined" onClick={handleVisionClick}>
-          Vision
-        </Button>
+      <div >
+       <Button variant={showMission ? 'contained' : 'outlined'} onClick={handleMissionClick}>
+        Mission
+      </Button>
+      <Button variant={showVision ? 'contained' : 'outlined'} onClick={handleVisionClick}>
+        Vision
+      </Button>
   
         {showMission && missionText}
         {showVision && visionText}

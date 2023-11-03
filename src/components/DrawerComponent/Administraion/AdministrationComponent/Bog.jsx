@@ -1,10 +1,11 @@
 import React from 'react'
 import { Mainbox } from '../Style'
-import { Typography } from '@mui/material'
+import { Card, Typography } from '@mui/material'
 
 const Bog = () => {
   return (
     <Mainbox>
+    <Card>
       <Typography>1st BOG MINUTE OF MEETING OF ITG</Typography>
       <Typography>2nd BOG MINUTE OF MEETING OF ITG</Typography>
       <Typography>3rd BOG MINUTE OF MEETING OF ITG</Typography>
@@ -13,6 +14,7 @@ const Bog = () => {
       <Typography>6th BOG MINUTE OF MEETING OF ITG</Typography>
       <Typography>7th BOG MINUTE OF MEETING OF ITG</Typography>
       <Typography>8th BOG MINUTE OF MEETING OF ITG</Typography>
+      </Card>
     </Mainbox>
   )
 }

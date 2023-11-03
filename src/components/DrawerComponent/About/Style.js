@@ -24,15 +24,30 @@ export const Container = styled(Box)(({ theme }) => ({
   alignItems: "center",
   width: "100%",
   marginTop: 20,
-  textAlign: "center",
-  overflow: "hidden",
+  boxSizing:'border-box',
+  // boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
+  // border: '5px solid white',
+  padding: theme.spacing(0, 10),
+  overflowX: "hidden",
   color: "#0D2E71",
+  [theme.breakpoints.down("sm")]: {
+    padding:theme.spacing(0,2)
+  },
   "&>p":{
     display:'flex',
-    textAlign:"center",
+    textAlign:"justify",
     overflow:"hidden",
     width:500,
-  },"& > button":{
+    verticalAlign:'baseline',
+    wordWrap:'break-word',
+    lineHeight:'1.5em'
+  },
+  "& h1,h4":{
+display:'flex',
+textAlign:'center',
+justifyContent:'center'
+  },
+  "& > button":{
     color:'#7E1717',
         fontSize:'2vw',
         fontWeight:600,
@@ -43,6 +58,10 @@ export const Container = styled(Box)(({ theme }) => ({
 }));
 
 export const Img = styled("img")(({ theme }) => ({
+  display:'flex',
+  flexDirection:'column',
+  justifyContent:'center',
+  alignItems:'center',
   width: "50%",
   height: "auto",
   padding: 30,
@@ -59,22 +78,27 @@ export const Card=styled("Box")(({theme})=>({
   justifyContent: "center",
   alignItems: "center",
   textAlign:'center',
+  boxSizing:'border-box',
+  padding: theme.spacing(0, 10),
+  overflowX: "hidden",
   flexDirection: "column", 
   width: "100%",
   marginTop: 20,
   textAlign: "center",
   overflow: "hidden",
   color: "#0D2E71",
+
   // padding: "20px",
   "&>h1":{
-    background:'#0D2E71',
-    color:'white'
+    // background:'#0D2E71',
+    color:'#0D2E71'
   },
   "& > h1, & > img, & > p": {
     marginBottom: "20px", 
   },
   "& > img": {
     display: "block",
+    // alignItems:'center',
     width: "743",
     maxWidth: "100%",
     borderRadius: "70px",
@@ -89,7 +113,7 @@ export const Card=styled("Box")(({theme})=>({
   },
   "& > p": {
     display: "flex",
-    textAlign: "center",
+    textAlign: "justify",
     overflow: "hidden",
     width: "100%",
     maxWidth:'100%',
@@ -98,22 +122,26 @@ export const Card=styled("Box")(({theme})=>({
       padding: "10px",
     },
   },
+  [theme.breakpoints.down("sm")]:{
+    padding: theme.spacing(0, 3),
+  }
 }));
 export const Card2=styled("Box")(({theme})=>({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
   textAlign:'center',
-  flexDirection: "column", 
+  flexDirection: "column",
+  boxSizing:'border-box',
+  padding: theme.spacing(0, 10),
   width: "100%",
   marginTop: 20,
-  textAlign: "center",
   overflow: "hidden",
   color: "#0D2E71",
   // padding: "20px",
   "&>h1":{
-    background:'#0D2E71',
-    color:'white'
+    // background:'#0D2E71',
+    color:'#0D2E71'
   },
   "& > h1, & > img, & > p": {
     marginBottom: "20px", 
@@ -134,7 +162,7 @@ export const Card2=styled("Box")(({theme})=>({
   },
   "& > p": {
     display: "flex",
-    textAlign: "center",
+    textAlign: "justify",
     overflow: "hidden",
     width: "100%",
     maxWidth:'100%',
@@ -143,4 +171,7 @@ export const Card2=styled("Box")(({theme})=>({
       padding: "10px",
     },
   },
+  [theme.breakpoints.down("sm")]:{
+    padding: theme.spacing(0, 3),
+  }
 }));
