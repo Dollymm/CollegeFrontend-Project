@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { Typography } from '@mui/material';
 import { Container } from '../Style';
-import CivlSwipeImage from '../imageSwipe/CivilSwipeImage'
+import CivilSwipeImage from '../imageSwipe/CivilSwipeImage'
 import AboutDepartment from '../SubCoponentOfDepartment/CivilSubComponent/AboutDepartment';
 import VisionMission from '../SubCoponentOfDepartment/CivilSubComponent/VisionMission';
 import Courses from '../SubCoponentOfDepartment/CivilSubComponent/Courses';
@@ -28,7 +28,7 @@ const CivilEng = () => {
   return (
     <>
     <div>
-    <CivlSwipeImage/>
+    <CivilSwipeImage/>
     </div>
     <Container>
         <div>

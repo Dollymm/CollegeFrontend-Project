@@ -64,3 +64,53 @@ export const Faculty=[
     designation:'Designation: Assistant Professor'
 }
 ]
+ export const CseFaculty=[
+    {
+        img:'./assets/CseFaculty1.jpg',
+        name:'Varun Prabhakar',
+        gmail:'varun.prabhakar@itgopeshwar.ac.in',
+        number:'763389999',
+        study:'B.Tech. (GBPUAT, Pantnagar)',
+        designation:'Designation:HOD, Assistant Professor'
+    },
+    {
+        img:'./assets/CseFaculty2.jpg',
+        name:'Yashvi Chandola',
+        gmail:'yashvi@itgopeshwar.ac.in',
+        number:'763389999',
+        study:'B.Tech. (GBPUAT, Pantnagar)',
+        designation:'Designation: Assistant Professor'
+    },
+    {
+        img:'./assets/CseFaculty3.jpg',
+        name:'Vivek Uniyal',
+        gmail:'vivek.uniyal@itgopeshwar.ac.in',
+        number:'763389999',
+        study:'B.Tech. (GBPUAT, Pantnagar)',
+        designation:'Designation: Assistant Professor'
+    },
+    {
+        img:'./assets/CseFaculty4.jpg',
+        name:'Pradeep Chandra',
+        gmail:'pardeep.chandra@gmail.com',
+        number:'763389999',
+        study:'B.Tech. (GBPUAT, Pantnagar)',
+        designation:'Designation: Assistant Professor'
+    },
+    {
+        img:'./assets/CseFaculty5.jpg',
+        name:'Monika Bartwal',
+        gmail:'monikakandwal23@gmail.com',
+        number:'763389999',
+        study:'B.Tech. (GBPUAT, Pantnagar)',
+        designation:'Designation: Assistant Professor'
+    },
+    {
+        img:'./assets/CseFaculty6.jpg',
+        name:'Ravindra Rawat',
+        gmail:'rawatr907@gmail.com',
+        number:'763389999',
+        study:'B.Tech. (GBPUAT, Pantnagar)',
+        designation:'Designation: Assistant Professor'
+    },
+]

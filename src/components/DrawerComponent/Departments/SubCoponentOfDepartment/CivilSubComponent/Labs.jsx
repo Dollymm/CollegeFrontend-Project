@@ -1,7 +1,7 @@
 import { Typography, Box } from '@mui/material';
 import React, { useState } from 'react';
 import { DepartmentBox, LabBox } from '../../Style';
-import Survey from './LabCoponent/Survey';
+import Survey from './LabComponent/Survey';
 const Labs = () => {
   const [displayText, setDisplayText] = useState('');
 

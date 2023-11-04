@@ -29,8 +29,8 @@ export const Container = styled(Box)(({ theme }) => ({
       background: 'linear-gradient(250deg, #EC3758 0%, #6B0000 56%)',
       color: 'white',
       [theme.breakpoints.down("sm")]: {
-        width: 60,
-        height: 30,
+        width: 70,
+        height: 40,
         fontSize: '0.75rem',
       },
       "&.selected": {

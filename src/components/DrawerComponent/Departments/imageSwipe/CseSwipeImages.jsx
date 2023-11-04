@@ -1,8 +1,8 @@
 import React from 'react'
+import { CseImges } from '../../../../constant/DepartmentImges';
 import Carousel from 'react-multi-carousel'
 import { Box, Typography, styled } from '@mui/material';
 import 'react-multi-carousel/lib/styles.css';
-import civilImages from '../../../../constant/DepartmentImges'
 
 
 const responsive = {
@@ -39,9 +39,9 @@ const Image = styled(Box)(({theme})=> ({
    
 }))
 
-const CivilSwipeImage= () => {
+const CseSwipeImages = () => {
+    
   return (
-    // <Box background={'rgba(0, 0, 255, 0.5)'}>
     <Carousel   swipeable={false}
     draggable={false}
     showDots={true}
@@ -64,7 +64,7 @@ const CivilSwipeImage= () => {
        
         {
 
-            civilImages.map(data=>(
+            CseImges.map(data=>(
                 <Image 
                 style={{
                     background: `url(${data.imgPath}) no-repeat center center`,
@@ -79,8 +79,7 @@ const CivilSwipeImage= () => {
         
 
     </Carousel>
-    // </Box>
   )
 }
 
-export default CivilSwipeImage
+export default CseSwipeImages

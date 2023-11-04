@@ -73,8 +73,8 @@ background:"linear-gradient(to right ,#F7DFAF,#DEE7F1)",
       alignItems: "center",
       flexDirection: "column",
       '& > img':{
-          width:120,
-          borderRadius:'5px'
+          width:100,
+          borderRadius:'1px'
       },
       "& > p": {
         color: "#0d1057",
@@ -85,11 +85,11 @@ background:"linear-gradient(to right ,#F7DFAF,#DEE7F1)",
         alignItems:'center',
         justifyContent:'center',
         textAlign: "center",
-        fontWeight:600,
+        fontWeight:100,
         height:80,
       },
     },
-    gridTemplateColumns: "1fr 1fr 1fr 1fr  ",
+    gridTemplateColumns: "1fr 1fr 1fr   ",
     [theme.breakpoints.down("lg")]: {
       gridTemplateColumns: "1fr 1fr 1fr",
     },
