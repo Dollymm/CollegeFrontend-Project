@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { DepartmentBox, LabBox } from "../../Style";
-import Cprogramming from "./LabsCse/cProgramming";
+import Cprogramming from "./LabsCse/CProgramming";
 import PythonProgramming from "./LabsCse/PythonProgramming";
 
 const Labs = () => {
