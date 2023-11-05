@@ -38,7 +38,6 @@ export const Events = () => {
           style={{
             color: "black",
             display: "flex",
-            textAlign: "center",
             justifyContent: "center",
             textAlign:'justify',
             marginTop:'10px'

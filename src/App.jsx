@@ -13,7 +13,7 @@ import Adminstration from "./components/DrawerComponent/Administraion/Adminstrat
 import ViceC from "./components/DrawerComponent/About/AboutComponent/ViceC";
 import Academic from './components/DrawerComponent/Academic/Academic'
 import Departments from './components/DrawerComponent/Departments/Departments'
-import Faclities from './components/DrawerComponent/Facilites/Facilities'
+
 import StudentCorner from './components/DrawerComponent/Students Corner/StuentsCorner'
 import  ViceChacellor  from "./components/DrawerComponent/Administraion/AdministrationComponent/ViceChacellor";
 import Director from "./components/DrawerComponent/Administraion/AdministrationComponent/Director"
@@ -39,6 +39,25 @@ import Ece from "./components/DrawerComponent/Departments/DepartmentComp/Ece"
 import Electrical from "./components/DrawerComponent/Departments/DepartmentComp/Electrical"
 import Humanities from "./components//DrawerComponent/Departments/DepartmentComp/Humanities"
 import Mechanical from "./components/DrawerComponent/Departments/DepartmentComp/Mechanical"
+import Faclities from './components/DrawerComponent/Facilites/Facilities'
+import Infrasture from './components/DrawerComponent/Facilites/FacilitesComp/Infrasture';
+import Libaray from './components/DrawerComponent/Facilites/FacilitesComp/Libaray';
+import InternetContivity from './components/DrawerComponent/Facilites/FacilitesComp/InternetContivity'
+import PowerSource from './components/DrawerComponent/Facilites/FacilitesComp/PowerSource'
+import Medical from './components/DrawerComponent/Facilites/FacilitesComp/Medical'
+import Canteen from './components/DrawerComponent/Facilites/FacilitesComp/Canteen'
+import Security from './components/DrawerComponent/Facilites/FacilitesComp/Security'
+import Ndl from './components/DrawerComponent/Facilites/FacilitesComp/Ndl'
+import Nptel from './components/DrawerComponent/Facilites/FacilitesComp/Nptel'
+import Hostel from './components/DrawerComponent/Facilites/FacilitesComp/Hostel'
+import Cultural from "./components/DrawerComponent/Students Corner/StudentCornerComp/Cultural";
+import Sports from "./components/DrawerComponent/Students Corner/StudentCornerComp/Sports"
+import College from "./components/DrawerComponent/Students Corner/StudentCornerComp/College"
+
+
+
+
+
 const App = () => {
   return (
     <>
@@ -79,8 +98,21 @@ const App = () => {
         <Route path="/humanities" element={<Humanities/>}/>
         <Route path="/mechanical" element={<Mechanical/>}/>
         <Route path="/facilities" element={<Faclities/>}/>
+        <Route path="/infrastructure" element={<Infrasture/>}/>
+        <Route path="/libirary" element={<Libaray/>}/>
+        <Route path="/internet" element={<InternetContivity/>}/>
+        <Route path="/powerSource" element={<PowerSource/>}/>
+        <Route path="/medical" element={<Medical/>}/>
+        <Route path="/canteen" element={<Canteen/>}/>
+        <Route path="/secirity" element={<Security/>}/>
+        <Route path="/ndl" element={<Ndl/>}/>
+        <Route path="/nptel" element={<Nptel/>}/>
+        <Route path="/hostel" element={<Hostel/>}/>
+       
         <Route path="/student" element={<StudentCorner/>}/>
-
+<Route path="/cultural" element={<Cultural/>}/>
+<Route path="/college" element={<College/>}/>
+<Route path="/sports" element={<Sports/>}/>
       </Routes>
     </>
   );

@@ -7,6 +7,7 @@ import Adminstration from "../../components/DrawerComponent/Administraion/Admins
 import About from "../../components/DrawerComponent/About/About";
 import Departments from "../../components/DrawerComponent/Departments/Departments";
 import { Box, Toolbar, Button } from "@mui/material";
+import StuentsCorner from "../../components/DrawerComponent/Students Corner/StuentsCorner";
 
 import {
   Container,
@@ -22,6 +23,7 @@ import {
   Signin,
 } from "./styles";
 import DrawerComponent from "../Drawer/DrawerComponent";
+import Facilities from "../../components/DrawerComponent/Facilites/Facilities";
 
 const MIddle_Header = () => {
   const navigate = useNavigate();
@@ -63,12 +65,8 @@ const MIddle_Header = () => {
           <div><Adminstration/></div>
           <div><Academic/></div>
       <div><Departments/></div>
-          <Link to="/student">
-            <Button style={{ color: "#7E1717" }}>Student Corner</Button>
-          </Link>
-          <Link to="/facilities">
-            <Button style={{ color: "#7E1717" }}>FACILITIES</Button>
-          </Link>
+        <div><StuentsCorner/></div>
+         <div><Facilities/></div>
         </Items>
 
         {/* for login */}

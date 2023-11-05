@@ -182,3 +182,89 @@ path:'mechanical',
 cName:'submenuitem4'
 },
 ]
+
+export const SubItemFacility=[
+    {
+        id:'1',
+        title:'Infrastruture',
+        path:'/infrastructure',
+        cName:'SubItemFacility'
+    },
+    {
+        id:'2',
+        title:'Libirary',
+        path:'/libirary',
+        cName:'SubItemFacility'
+    },
+    {
+        id:'3',
+        title:'Internet Connectivity',
+        path:'/internet',
+        cName:'SubItemFacility'
+    },
+    {
+        id:'4',
+        title:'Alternative Power Source',
+        path:'/powerSource',
+        cName:'SubItemFacility'
+    },
+    {
+        id:'5',
+        title:'Medical Facility',
+        path:'/medical',
+        cName:'SubItemFacility'
+    },
+    {
+        id:'6',
+        title:'Canteen',
+        path:'/canteen',
+        cName:'SubItemFacility'
+    },
+    {
+        id:'7',
+        title:'Security',
+        path:'/secirity',
+        cName:'SubItemFacility'
+    },
+    {
+        id:'8',
+        title:'National Digital Libarary',
+        path:'/ndl',
+        cName:'SubItemFacility'
+    },
+    {
+        id:'9',
+        title:'NPTEL Local Chapter',
+        path:'/nptel',
+        cName:'SubItemFacility'
+    },
+    {
+        id:'10',
+        title:'Hostel',
+        path:'/hostel',
+        cName:'SubItemFacility'
+    },
+]
+export const SubItemStudent=[
+    {
+        id:'1',
+        title:'Cultural Events',
+        path:'/cultural',
+        cName:'SubItemStudent'
+
+    },
+    {
+        id:'2',
+        title:'College Event Gallery',
+        path:'/college',
+        cName:'SubItemStudent'
+
+    },
+    {
+        id:'3',
+        title:'Sports Event Gallery',
+        path:'/sports',
+        cName:'SubItemStudent'
+
+    },
+]
